@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      textarea {
+        width: 100%;
+        padding: 16px;
+        line-height: 1.4;
+        font-family: sans-serif;
+        resize: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input
+      type="text"
+      value="Mispellings and grammatical errors can effect your credibility."
+      data-grammarly
+      data-client-id="5c891c34-55b1-4504-b1a2-5215d35757ba"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@grammarly/textarea@latest/+esm"
+    ></script>
+  </body>
+</html>

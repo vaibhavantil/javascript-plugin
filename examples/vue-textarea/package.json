@@ -1,5 +1,5 @@
 {
-  "name": "grammarly-example-vue-textarea",
+  "name": "grammarly-example-vue-input",
   "version": "1.0.0",
   "description": "Example integration for @grammarly/vue-textarea",
   "scripts": {
