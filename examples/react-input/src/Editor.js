@@ -7,12 +7,14 @@ import "./style.css";
 export const Editor = () => {
   const [value, setValue] = useState(demoText);
   return (
-    <GrammarlyInput
-      clientId={demoClientId}
-      value={value}
-      onChange={(event) => {
-        setValue(event.target.value);
-      }}
-    />
+    <div style={{ width: "450px" }}>
+      <GrammarlyInput
+        clientId={demoClientId}
+        value={value}
+        onChange={(event) => {
+          setValue(event.target.value);
+        }}
+      />
+    </div>
   );
 };

@@ -10,8 +10,8 @@ import Editor from "./components/Editor";
 export default {
   name: "App",
   components: {
-    Editor
-  }
+    Editor,
+  },
 };
 </script>
 
@@ -24,11 +24,9 @@ export default {
   box-sizing: border-box;
 }
 
-textarea {
-  width: 100%;
-  padding: 16px;
-  line-height: 1.4;
-  resize: none;
+input {
+  width: 400px;
+  padding: 8px 12px;
   font-family: sans-serif;
 }
 </style>
