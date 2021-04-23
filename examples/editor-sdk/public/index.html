@@ -12,19 +12,27 @@
         box-sizing: border-box;
       }
 
-      textarea {
-        width: 100%;
-        padding: 16px;
-        line-height: 1.4;
+      body {
         font-family: sans-serif;
-        resize: none;
-        display: block;
+      }
+
+      .baseline :is(input, textarea, [contenteditable]) {
+        font: inherit;
+        line-height: 1.5;
+        width: 400px;
+        padding: 8px 12px;
+        overflow: auto;
+      }
+
+      .baseline :is([contenteditable]) {
+        height: 15rem;
+        resize: both;
       }
     </style>
   </head>
 
   <body>
-    <!-- prettier-ignore -->
+    <h2>Textarea</h2>
     <textarea data-grammarly rows="20">
 The basics
 
@@ -38,6 +46,26 @@ Grammarly can give you very helpful feedback on your writing. Passive voice can 
   
 It can even help when you wanna refine ur slang or formality level. That's especially useful when writing for a broad audience ranging from businessmen to friends and family, don't you think? It'll inspect your vocabulary carefully and suggest the best word to make sure you don't have to analyze your writing too much.
     </textarea>
+
+    <h2>Input</h2>
+    <label for="test-input">Label</label>
+    <input
+      id="test-input"
+      data-grammarly
+      value="Mispellings and grammatical errors can effect your credibility."
+    />
+
+    <h2>Contenteditable</h2>
+    <div contenteditable="true" data-grammarly>
+      <h1>The basics</h1>
+      <p>
+        Mispellings and grammatical errors can effect your credibility. The same
+        goes for misused commas, and other types of punctuation . Not only will
+        Grammarly underline these issues in red, it will also showed you how to
+        correctly write the sentence.
+      </p>
+    </div>
+
     <script src="https://js.grammarly.com/grammarly-editor-sdk@latest?clientId=5c891c34-55b1-4504-b1a2-5215d35757ba"></script>
   </body>
 </html>
