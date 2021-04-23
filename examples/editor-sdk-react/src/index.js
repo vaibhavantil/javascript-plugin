@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Editor } from "./Editor";
+import { Editors } from "./Editors";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <Editor />
+    <Editors />
   </React.StrictMode>,
   rootElement
 );

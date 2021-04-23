@@ -16,24 +16,31 @@
         font-family: sans-serif;
       }
 
-      .baseline :is(input, textarea, [contenteditable]) {
+      input,
+      textarea,
+      [contenteditable] {
         font: inherit;
         line-height: 1.5;
-        width: 400px;
+        width: 600px;
         padding: 8px 12px;
         overflow: auto;
       }
 
-      .baseline :is([contenteditable]) {
-        height: 15rem;
+      label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      [contenteditable] {
+        height: 10rem;
+        border: 1px solid;
         resize: both;
       }
     </style>
   </head>
-
   <body>
     <h2>Textarea</h2>
-    <textarea data-grammarly rows="20">
+    <textarea data-grammarly rows="10">
 The basics
 
 Mispellings and grammatical errors can effect your credibility. The same goes for misused commas, and other types of punctuation . Not only will Grammarly underline these issues in red, it will also showed you how to correctly write the sentence.
@@ -57,7 +64,7 @@ It can even help when you wanna refine ur slang or formality level. That's espec
 
     <h2>Contenteditable</h2>
     <div contenteditable="true" data-grammarly>
-      <h1>The basics</h1>
+      <h3>The basics</h3>
       <p>
         Mispellings and grammatical errors can effect your credibility. The same
         goes for misused commas, and other types of punctuation . Not only will
