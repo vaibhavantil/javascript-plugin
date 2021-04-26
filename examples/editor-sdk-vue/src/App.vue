@@ -14,21 +14,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 100%;
-  padding: 16px;
-  line-height: 1.4;
-  resize: none;
-  font-family: sans-serif;
-}
-</style>
