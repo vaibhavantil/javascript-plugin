@@ -1,7 +1,7 @@
 {
   "name": "grammarly-example-editor-sdk-vue",
   "version": "1.0.0",
-  "description": "Example integration for @grammarly/editor-sdk-react",
+  "description": "Example integration for @grammarly/editor-sdk-vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

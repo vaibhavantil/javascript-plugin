@@ -10,7 +10,7 @@ import Editor from "./components/Editors";
 export default {
   name: "App",
   components: {
-    Editor
-  }
+    Editor,
+  },
 };
 </script>
