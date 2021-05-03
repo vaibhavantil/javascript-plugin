@@ -1,5 +1,5 @@
 {
-  "name": "grammarly-example-editor-sdk-react",
+  "name": "grammarly-example-editor-sdk-react-config",
   "version": "1.0.0",
   "description": "Example integration for @grammarly/editor-sdk-react",
   "main": "src/index.js",
